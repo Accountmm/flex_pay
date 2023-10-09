@@ -1,0 +1,75 @@
+@import url(./fonts.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+:root {
+    --c-reg: "Comfortaa-Regular";
+    --c-bold: "Comfortaa-Bold";
+    --m-s-b: "Montserrat-SemiBold";
+    --m-reg: "Montserrat-Regular";
+    --m-med: "Montserrat-Medium";
+    --m-e-b: "Montserrat-ExtraBold";
+    --m-bold: "Montserrat-Bold";
+    --ff: #fff;
+
+}
+
+body {
+    background: linear-gradient(180deg, #C18E08 0%, #BD570E 100%);
+    overflow-y: scroll;
+}
+
+body::-webkit-scrollbar {
+    width: 10px;
+    background: var(--ff);
+
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 7px;
+    background: linear-gradient(180deg, #9C4B28 0%, #4A200E 105.16%),
+        linear-gradient(0deg, #FCA554 13.62%, rgba(237, 137, 45, 0) 100%);
+
+}
+
+.header {
+    position: relative;
+    padding-top: 50px;
+}
+
+.nav {
+    background: linear-gradient(0deg, rgba(105, 53, 30, 0.6), rgba(105, 53, 30, 0.6)),
+        linear-gradient(0deg, #FCA554 70.97%, rgba(237, 137, 45, 0) 166.37%);
+    border: 2px solid;
+
+    border-image-source: linear-gradient(0deg, #FCA554 70.97%, rgba(237, 137, 45, 0) 166.37%);
+    box-shadow: 0px -7px 0px 0px #00000040 inset;
+    width: 100%;
+    border-radius: 100px;
+}
+
+.nav__box {
+    display: flex;
+
+}
+
+.nav__box__left {
+    display: flex;
+    gap: 25px;
+}
+
+.nav__box__right {
+    display: flex;
+    gap: 60px;
+}
